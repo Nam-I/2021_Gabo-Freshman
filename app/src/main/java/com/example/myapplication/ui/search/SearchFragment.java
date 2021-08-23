@@ -10,9 +10,11 @@ import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 
+import com.example.myapplication.MainActivity;
 import com.example.myapplication.R;
 
 import java.util.ArrayList;
@@ -25,6 +27,9 @@ public class SearchFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        ActionBar actionBar = ((MainActivity)getActivity()).getSupportActionBar();
+        actionBar.hide();
+
         View view = inflater.inflate(R.layout.fragment_search, container, false);
 
         SearchView searchView = view.findViewById(R.id.search_view);
