@@ -7,16 +7,31 @@
     android:orientation="vertical"
     tools:context=".ui.search.SearchFragment">
 
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/search_view"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:baselineAligned="false"
-        android:imeOptions="actionDone"
-        android:singleLine="true"
-        app:iconifiedByDefault="false"
-        app:queryHint="검색어를 입력하시오"
-        tools:ignore="MissingConstraints" />
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            app:iconifiedByDefault="false"
+            app:queryHint="검색어를 입력하시오"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="검색" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,5 +41,5 @@
     <ListView
         android:id="@+id/list_item"
         android:layout_width="match_parent"
-        android:layout_height="480dp"></ListView>
+        android:layout_height="450dp"></ListView>
 </LinearLayout>
