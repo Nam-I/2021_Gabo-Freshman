@@ -41,34 +41,26 @@ public class SearchAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
-        if (convertView == null) {
+        if (convertView == null)
             convertView = inflater.inflate(R.layout.checkbox_layout, parent, false);
-        }
 
         TextView textView = convertView.findViewById(R.id.textView);
         textView.setText(itemList.get(position));
 
-        CheckBox checkBox = convertView.findViewById(R.id.checkbox);
-//        checkBox.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(v.getContext(),"즐겨찾기 성공!", Toast.LENGTH_LONG).show();
-//            }
-//        });
+        CheckBox checkBox = convertView.findViewById(R.id.checkBox);
+        checkBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(), itemList.get(position) + " 즐겨찾기 성공!", Toast.LENGTH_SHORT).show();
+            }
+        });
 
-        ListView listView = convertView.findViewById(R.id.list_item);
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//
-//            @Override
-//            public void onItemClick(AdapterView parent, View v, int position, long id) {
-//
-//                // get TextView's Text.
-////                String strText = (String) parent.getItemAtPosition(position);
-//
-//                Toast.makeText(v.getContext(), "즐겨찾기 성공!", Toast.LENGTH_LONG).show();
-//            }
-//        });
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(), itemList.get(position), Toast.LENGTH_SHORT).show();
+            }
+        });
 
         return convertView;
     }
