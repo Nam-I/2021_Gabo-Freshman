@@ -19,7 +19,7 @@ public class SearchAdapter extends BaseAdapter {
     private LayoutInflater inflater;
     private List<String> itemList;
 
-    SearchAdapter(Context context, List<String> itemList) {
+    public SearchAdapter(Context context, List<String> itemList) {
         this.itemList = itemList;
         this.inflater = LayoutInflater.from(context);
     }

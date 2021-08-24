@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/github/2021_SW/app/src/main/res/layout/activity_main.xml" value="0.13134057971014493" />
+        <entry key="..\:/github/2021_SW/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/github/2021_SW/app/src/main/res/layout/checkbox_layout.xml" value="0.1" />
+        <entry key="..\:/github/2021_SW/app/src/main/res/layout/fragment_bookmark.xml" value="0.10144927536231885" />
         <entry key="..\:/github/2021_SW/app/src/main/res/layout/fragment_home.xml" value="0.12590579710144928" />
-        <entry key="..\:/github/2021_SW/app/src/main/res/layout/fragment_search.xml" value="0.4466666666666667" />
+        <entry key="..\:/github/2021_SW/app/src/main/res/layout/fragment_search.xml" value="0.10144927536231885" />
         <entry key="..\:/github/2021_SW/app/src/main/res/menu/bottom_nav_menu.xml" value="0.18385416666666668" />
       </map>
     </option>
