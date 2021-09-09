@@ -20,4 +20,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:gravity="center_horizontal" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="340dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"></ListView>
 </androidx.constraintlayout.widget.ConstraintLayout>

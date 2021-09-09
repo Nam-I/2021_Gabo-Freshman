@@ -11,9 +11,10 @@
         android:id="@+id/imageButton"
         android:layout_width="340dp"
         android:layout_height="70dp"
-        android:layout_marginBottom="20dp"
         android:layout_gravity="center"
-        android:src="@drawable/search" />
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/search"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imageView"

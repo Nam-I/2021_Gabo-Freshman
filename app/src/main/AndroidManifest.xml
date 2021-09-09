@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".MainActivity2"
+            android:name=".ui.search.SearchFragment2"
             android:exported="true"
             android:label="검색"/>
         <activity

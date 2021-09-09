@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.ui.search;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
@@ -7,13 +7,13 @@ import android.os.Bundle;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import com.example.myapplication.ui.search.SearchAdapter;
+import com.example.myapplication.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity2 extends AppCompatActivity {
+public class SearchFragment2 extends AppCompatActivity {
     private List<String> list;
     private ArrayList<String> arrayList;
     private BaseAdapter adapter;
